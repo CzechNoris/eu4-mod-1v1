@@ -1,0 +1,70 @@
+#Ruler replacement
+namespace = ruler_random
+
+country_event = {
+	id = ruler_random.1
+	title = ruler_random.1t
+	desc = ruler_random.1d
+	picture = DEATH_OF_HEIR_eventPicture
+	hidden = yes
+
+	trigger = {
+		ai = no
+		OR = {
+			NOT = { ADM = 4 }
+			NOT = { DIP = 4 }
+			NOT = { MIL = 4 }
+			ADM = 5
+			DIP = 5
+			MIL = 5
+		}
+	}
+		
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_legitimacy = 100
+	}
+	
+	option = {
+	name = ruler_random.1o
+		while = {
+			limit = {
+				NOT = { ADM = 4 }
+				}
+			change_adm = 1
+		}
+		while = {
+			limit = {
+				ADM = 5
+				}
+			change_adm = -1
+		}
+		while = {
+			limit = {
+				NOT = { DIP = 4 }
+				}
+			change_dip = 1
+		}
+		while = {
+			limit = {
+				DIP = 5
+				}
+			change_dip = -1
+		}
+		while = {
+			limit = {
+				NOT = { MIL = 4 }
+				}
+			change_mil = 1
+		}
+		while = {
+			limit = {
+				MIL = 5
+				}
+			change_mil = -1
+		}
+	}
+}

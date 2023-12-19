@@ -1,0 +1,37 @@
+tournament_ideas = {
+	start = {
+		global_unrest = -50
+		legitimacy = 50
+	}
+	
+	bonus = {
+		yearly_corruption = -10
+	}
+	
+	trigger = {
+		culture_group = epp
+	}
+	free = yes
+	
+	arrogance = {
+		land_morale = 0.30
+	}
+	infestation = {
+		global_manpower_modifier = 0.3
+	}
+	sodomy = {
+		stability_cost_modifier = -0.25
+	}
+	suffering = {
+		infantry_power = 0.1
+	}
+	avarice = {
+		province_warscore_cost = -0.1
+	}
+	hatred = {
+		manpower_recovery_speed = 0.2
+	}
+	dominion = {
+		discipline = 0.05
+	}	
+}

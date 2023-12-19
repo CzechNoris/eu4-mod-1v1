@@ -1,0 +1,25 @@
+##################################################
+# Distinct
+##################################################
+
+tournament = {
+	max_absolutism = 100
+	global_unrest = -50
+	legitimacy = 100
+	republican_tradition = 2
+	land_forcelimit = 30
+	global_regiment_recruit_speed = -0.5
+	build_time = -0.5
+}
+
+stability_bad = {
+	stability_cost_modifier = 0.2
+}
+
+stability_worse = {
+	stability_cost_modifier = 0.2
+}
+
+building_tall = {
+	allowed_num_of_buildings = 2
+}

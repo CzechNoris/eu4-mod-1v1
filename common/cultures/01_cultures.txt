@@ -1,0 +1,12 @@
+epp_group = {
+	graphical_culture = westerngfx
+
+	male_names = { Distinct Stindinct Serenade Doinkey Monkeyman Liutasian Crazyblitz Jones Xaime Steef Cyxpanek Trfy N1tr00 Alexbrumbart Jarvin Meme Moebius Moredroz Taran Simen Checklad DonCamillo Egil Jepp Leeroy Pashalis Purple Rageyy RedOktober Slayingbeast Tullipen Reichtangly }
+	
+	dynasty_names = {
+			"EPP"  
+		}
+	
+	epp = {
+		primary = CND
+}

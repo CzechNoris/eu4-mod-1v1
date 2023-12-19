@@ -1,0 +1,34 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+###########################################
+# AI Bonus
+###########################################
+
+ai_distinct_modifier = {
+
+    potential = {
+		NOT = { full_idea_group = quantity }
+    }               
+                    
+    trigger = {
+		ai = yes
+    }    
+	
+	global_unrest = -100
+}
+
+ai_distinct_modifier_2 = {
+
+    potential = {
+		ai = yes
+    }               
+                    
+    trigger = {
+		full_idea_group = quantity
+    }    
+	
+	discipline = -0.5
+}

@@ -1,0 +1,321 @@
+namespace = tournament
+
+# Europe Setup
+country_event = {
+	id = tournament.01
+	title = tournamentt1
+	desc = tournamentd1
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento1
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						region = north_german_region
+						region = poland_region
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T00
+				add_core = T00
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.02
+	title = tournamentt2
+	desc = tournamentd2
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento2
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						region = south_german_region
+						region = carpathia_region
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T01
+				add_core = T01
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.03
+	title = tournamentt3
+	desc = tournamentd3
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = {
+		name = tournamento3
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						region = low_countries_region
+						region = france_region
+						area = venetia_area
+						area = lombardy_area
+						area = piedmont_area
+						area = liguria_area
+						area = po_valley_area
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T02
+				add_core = T02
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.04
+	title = tournamentt4
+	desc = tournamentd4
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento4
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						region = scandinavia_region
+						region = british_isles_region
+						AND = {
+							region = russia_region
+							OR = {
+								area = karelia_area
+								area = north_karelia
+								area = arkhangelsk_area
+								area = pomor_area
+							}
+						}
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T03
+				add_core = T03
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.05
+	title = tournamentt5
+	desc = tournamentd5
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento5
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						region = baltic_region
+						region = ruthenia_region
+						AND = {
+							region = russia_region
+							OR = {
+								NOT = { area = karelia_area }
+								NOT = { area = north_karelia }
+								NOT = { area = arkhangelsk_area }
+								NOT = { area = pomor_area }
+							}
+						}
+						area = crimea_area
+						area = zaporizhia_area
+						area = yedisan_area
+						area = azov_area
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T04
+				add_core = T04
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.06
+	title = tournamentt6
+	desc = tournamentd6
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento6
+		hidden_effect = {
+			dismantle_hre = yes
+			every_province = {
+				limit = {
+					OR = {
+						AND = {
+							region = italy_region
+							OR = {
+								NOT = { area = venetia_area }
+								NOT = { area = lombardy_area }
+								NOT = { area = piedmont_area }
+								NOT = { area = liguria_area }
+								NOT = { area = po_valley_area }
+							}
+						}
+						region = balkan_region
+						area = hudavendigar_area
+						area = aydin_area
+						area = germiyan_area
+						area = aegean_archipelago_area
+					}
+				}
+				add_province_modifier = {
+					name = "building_tall"
+					duration = -1
+				}
+				cede_province = T05
+				add_core = T05
+				change_religion = orthodox
+				change_culture = epp
+				add_building = conscription_center
+				add_building = training_fields
+				add_building = university
+				remove_building = fort_15th
+				change_trade_goods = cloth
+				set_base_tax = 2
+				set_base_production = 2
+				set_base_manpower = 8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tournament.10
+	title = tournamentt10
+	desc = tournamentd10
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = tournamento10
+		add_prestige = 100
+		add_treasury = 500000
+		add_stability = 6
+		add_army_tradition = 80
+		add_country_modifier = { name = tournament duration = -1 }
+		add_patriarch_authority = 100
+		add_absolutism = 100
+		add_army_professionalism = 0.05
+		add_splendor = 5000
+		add_adm_tech = 14
+		add_dip_tech = 14
+		add_mil_tech = 14
+		add_mil_power = 7000
+		add_adm_power = 6000
+		add_dip_power = 5000
+		add_yearly_manpower = 10
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.2
+				cavalry = 0.0
+				artillery = 0.2
+			}
+		}
+		every_province = {
+			set_local_autonomy = 0
+		}
+	}
+}
